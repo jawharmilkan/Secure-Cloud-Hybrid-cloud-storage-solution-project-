@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>SyncMessenger</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Welcome to SyncMessenger</h2>
+      <form action="/send_message" method="post">
+        <div class="form-group">
+          <label for="receiver">Send to</label>
+          <input type="text" class="form-control" id="receiver" name="receiver" required>
+        </div>
+        <div class="form-group">
+          <label for="content">Message</label>
+          <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </body>
+</html>
